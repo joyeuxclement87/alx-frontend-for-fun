@@ -1,0 +1,19 @@
+/* 13. Columns and operators*/
+
+@mixin widthv($width){
+    width: $width;
+}
+
+@for $a from 1 through 4 {
+    .col-#{$a} {
+        @if $a == 1 {
+            @include widthv(100%);
+        } @else if $a == 2 {
+            @include widthv(50%);
+        } @else if $a == 3 {
+            @include widthv(33.3333333333%);
+        } @else {
+            @include widthv(25%);
+        }
+    }
+}
