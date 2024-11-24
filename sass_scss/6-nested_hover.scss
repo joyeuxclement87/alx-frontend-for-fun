@@ -1,0 +1,9 @@
+/* working on the 6. Nested hover */
+$first-color: #ff0000;
+$second-color: #00ff00;
+button {
+  color: $first-color;
+  &:hover {
+    color: $second-color;
+  }
+}
